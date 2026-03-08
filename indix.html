@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="تجسير - نحول أفكارك إلى تجارب رقمية استثنائية" />
+    <title>تجسير | TAJSEER</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&family=Syne:wght@400;600;700;800&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- ═══════════════════════════════════════════
+     NAVBAR
+═══════════════════════════════════════════ -->
+    <nav id="navbar">
+        <div class="container">
+            <div class="nav-inner">
+
+                <a href="#hero" class="nav-logo">
+                    <img src="tajseer-logo.png" alt="Tajseer Logo" class="nav-logo-img" />
+                    <div class="nav-logo-text">
+                        <span class="en">TAJSEER</span>
+                        <span class="ar">تجسير</span>
+                    </div>
+                </a>
+
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#hero">الرئيسية</a></li>
+                    <li><a href="#services">خدماتنا</a></li>
+                    <li><a href="#why">لماذا تجسير</a></li>
+
+                    <li><a href="#trust">عملاؤنا</a></li>
+                    <li><a href="#cta" class="nav-cta">تواصل معنا</a></li>
+                </ul>
+
+                <button class="nav-hamburger" id="hamburger" aria-label="القائمة">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+            </div>
+
+            <!-- Mobile menu -->
+            <div class="mobile-menu" id="mobileMenu">
+                <a href="#hero" onclick="closeMobile()">الرئيسية</a>
+                <a href="#services" onclick="closeMobile()">خدماتنا</a>
+                <a href="#why" onclick="closeMobile()">لماذا تجسير</a>
+
+                <a href="#trust" onclick="closeMobile()">عملاؤنا</a>
+                <a href="#cta" onclick="closeMobile()" class="mob-cta">تواصل معنا</a>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- ═══════════════════════════════════════════
+     HERO
+═══════════════════════════════════════════ -->
+    <section class="hero" id="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-grid"></div>
+
+        <div class="container">
+            <div class="hero-inner">
+
+                <!-- LEFT: TEXT -->
+                <div class="hero-text">
+                    <div class="hero-badge fade-up">
+                        <span class="badge-flag">🇯🇴</span>
+                        <span class="badge-divider"></span>
+                        <span class="badge-text">الأردن &nbsp;·&nbsp; نطمح للعالمية 🌍</span>
+                    </div>
+
+                    <h1 class="hero-title fade-up d1">
+                        نحوّل أفكارك إلى<br>
+                        <span class="grad">تجارب رقمية</span><br>
+                        استثنائية
+                    </h1>
+
+                    <p class="hero-desc fade-up d2">
+                        تجسير تصنع جسراً بين رؤيتك والواقع — تعليم إلكتروني تفاعلي، مواقع ويب احترافية، وفيديوهات AI
+                        تروي قصة علامتك بأسلوب لا يُنسى.
+                    </p>
+
+                    <div class="hero-btns fade-up d3">
+                        <a href="#cta" class="btn-p">ابدأ مشروعك الآن ←</a>
+                        <a href="#services" class="btn-o">اكتشف خدماتنا</a>
+                    </div>
+
+                    <div class="hero-stats fade-up d4">
+                        <div class="stat">
+                            <div class="stat-n">+50</div>
+                            <div class="stat-l">مشروع منجز</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-n">3+</div>
+                            <div class="stat-l">دول خليجية</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-n">100%</div>
+                            <div class="stat-l">رضا العملاء</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- RIGHT: VISUAL -->
+                <div class="hero-visual">
+
+                    <!-- AI Video background — replace hero-bg.mp4 with your video file -->
+                    <div class="hero-video-wrap">
+                        <video class="hero-video" autoplay muted loop playsinline>
+                            <source src="hero-bg.mp4" type="video/mp4" />
+                        </video>
+                        <div class="hero-video-overlay"></div>
+                    </div>
+
+                    <!-- Orbit cards -->
+                    <div class="orbit-card oc-top-right fade-up d1">
+                        <span class="oc-icon">🎓</span>
+                        <span>تعليم إلكتروني تفاعلي</span>
+                    </div>
+                    <div class="orbit-card oc-mid-right fade-up d2">
+                        <span class="oc-icon">🤖</span>
+                        <span>فيديوهات AI</span>
+                    </div>
+                    <div class="orbit-card oc-mid-left fade-up d3">
+                        <span class="oc-icon">🌐</span>
+                        <span>مواقع ويب احترافية</span>
+                    </div>
+                    <div class="orbit-card oc-bottom-center saudi-card fade-up d4">
+                        <span class="oc-icon">🇸🇦</span>
+                        <span>شركاء في السعودية</span>
+                    </div>
+
+                    <!-- CENTER LOGO -->
+                    <div class="hero-logo-wrap"><img src="tajseer-logo.png" alt="Tajseer Logo" class="hero-logo-img" />
+                    </div>
+
+                </div>
+                <!-- end hero-visual -->
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════════
+     PARTNERS / PRESENCE
+═══════════════════════════════════════════ -->
+    <section class="partners-sec" id="partners">
+        <div class="container">
+            <p class="p-label fade-up">حضورنا الجغرافي</p>
+            <div class="p-row">
+                <div class="p-badge fade-scale d1">
+                    <div class="p-flag">🇯🇴</div>
+                    <div class="p-name">الأردن</div>
+                    <div class="p-tag">المقر الرئيسي</div>
+                </div>
+                <div class="p-badge fade-scale d2">
+                    <div class="p-flag">🇸🇦</div>
+                    <div class="p-name">المملكة العربية السعودية</div>
+                    <div class="p-tag">شريك رئيسي</div>
+                </div>
+                <div class="p-badge fade-scale d3">
+                    <div class="p-flag">🌍</div>
+                    <div class="p-name">التوسع الدولي</div>
+                    <div class="p-tag">قادم قريباً</div>
+                </div>
+            </div>
+
+            <div class="metrics">
+                <div class="metric fade-up d1">
+                    <div class="metric-n">٢٠٢٢</div>
+                    <div class="metric-l">تأسست عام</div>
+                </div>
+                <div class="metric fade-up d2">
+                    <div class="metric-n">+٥٠</div>
+                    <div class="metric-l">مشروع ناجح</div>
+                </div>
+                <div class="metric fade-up d3">
+                    <div class="metric-n">+١٠</div>
+                    <div class="metric-l">عميل راضٍ</div>
+                </div>
+                <div class="metric fade-up d4">
+                    <div class="metric-n">٣</div>
+                    <div class="metric-l">دول خليجية</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════════
+     SERVICES
+═══════════════════════════════════════════ -->
+    <section class="services-sec" id="services">
+        <div class="container">
+            <div class="sec-head">
+                <div class="sec-tag fade-up">Our Services</div>
+                <h2 class="sec-title fade-up d1">خدمات تصنع <span class="grad">الفارق الحقيقي</span></h2>
+                <p class="sec-sub fade-up d2">نجمع الإبداع مع التكنولوجيا لنقدم حلولاً رقمية تتجاوز التوقعات</p>
+            </div>
+
+            <div class="sv-grid">
+
+                <div class="sv-card fade-left d1">
+                    <div class="sv-icon">🎓</div>
+                    <h3 class="sv-title">التعليم الإلكتروني التفاعلي</h3>
+                    <p class="sv-desc">نصمّم منصات تعليمية تفاعلية بالكامل تتضمن كويزات ذكية، محتوى مرئي جذاب، وتجربة
+                        تعلّم لا تُنسى تناسب الشركات والأفراد.</p>
+                    <div class="sv-arrow">اعرف المزيد ←</div>
+                </div>
+
+                <div class="sv-card fade-up d2">
+                    <div class="sv-icon">🌐</div>
+                    <h3 class="sv-title">تصميم مواقع الويب</h3>
+                    <p class="sv-desc">نبني مواقع ويب سريعة وأنيقة وقابلة للتوسع — من المتاجر الإلكترونية إلى المواقع
+                        المؤسسية، كل موقع يعكس هوية علامتك.</p>
+                    <div class="sv-arrow">اعرف المزيد ←</div>
+                </div>
+
+                <div class="sv-card fade-right d3">
+                    <div class="sv-icon">🤖</div>
+                    <h3 class="sv-title">فيديوهات AI للشركات</h3>
+                    <p class="sv-desc">نُنتج فيديوهات احترافية بتقنية الذكاء الاصطناعي تروي قصة علامتك التجارية بأسلوب
+                        إبداعي يترك أثراً عميقاً.</p>
+                    <div class="sv-arrow">اعرف المزيد ←</div>
+                </div>
+
+                <div class="sv-card fade-up d1">
+                    <div class="sv-icon">📊</div>
+                    <h3 class="sv-title">استراتيجية المحتوى الرقمي</h3>
+                    <p class="sv-desc">نضع لك خارطة طريق رقمية شاملة تشمل المحتوى التسويقي والتواصل مع الجمهور المستهدف
+                        في منطقة الشرق الأوسط.</p>
+                    <div class="sv-arrow">اعرف المزيد ←</div>
+                </div>
+
+                <div class="sv-card fade-scale d2">
+                    <div class="sv-icon">🎨</div>
+                    <h3 class="sv-title">الهوية البصرية</h3>
+                    <p class="sv-desc">نصمّم هوية بصرية متكاملة وجذابة تعكس قيم شركتك وتميّزك في سوق مليء بالمنافسين.
+                    </p>
+                    <div class="sv-arrow">اعرف المزيد ←</div>
+                </div>
+
+                <div class="sv-card fade-left d3">
+                    <div class="sv-icon">⚡</div>
+                    <h3 class="sv-title">الحلول التقنية المتكاملة</h3>
+                    <p class="sv-desc">من الفكرة إلى الإطلاق — نقدم حلولاً تقنية شاملة تجمع بين التصميم والتطوير
+                        والتسويق في منظومة واحدة.</p>
+                    <div class="sv-arrow">اعرف المزيد ←</div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════════
+     TEAM — OUR FAMILY
+═══════════════════════════════════════════ -->
+    <section class="team-sec" id="team">
+
+        <div class="team-header fade-up">
+            <div class="sec-tag">OUR FAMILY</div>
+            <h2 class="team-big-title">Our <span class="grad">Family</span></h2>
+            <p class="team-desc">Meet the heart and soul of Tajseer — our dedicated team of creative minds, strategists,
+                and innovators driving success for every client and partner.</p>
+        </div>
+
+        <div class="tm-hint fade-up d1">
+            <span class="tm-arr-hint">←</span> اسحب للتصفح <span class="tm-arr-hint">→</span>
+        </div>
+
+        <div class="tm-track-wrap">
+            <div class="tm-fade-left"></div>
+            <div class="tm-fade-right"></div>
+            <div class="tm-track" id="tmTrack">
+
+                <div class="tm-card tm-director">
+                    <div class="tm-img-wrap">
+                        <img src="team/director.jpg" class="tm-img" alt="المديرة"
+                            onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                        <div class="tm-placeholder"><span>👤</span></div>
+                        <div class="tm-crown">👑</div>
+                        <div class="tm-overlay">
+                            <div class="tm-badge">المديرة التنفيذية</div>
+                            <div class="tm-name">اسم المديرة</div>
+                            <div class="tm-role">CEO & Founder · تجسير</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tm-card">
+                    <div class="tm-img-wrap">
+                        <img src="team/member-1.jpg" class="tm-img" alt="عضو"
+                            onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                        <div class="tm-placeholder"><span>👤</span></div>
+                        <div class="tm-overlay">
+                            <div class="tm-name">اسم العضو</div>
+                            <div class="tm-role">مصمم جرافيك</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tm-card">
+                    <div class="tm-img-wrap">
+                        <img src="team/member-2.jpg" class="tm-img" alt="عضو"
+                            onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                        <div class="tm-placeholder"><span>👤</span></div>
+                        <div class="tm-overlay">
+                            <div class="tm-name">اسم العضو</div>
+                            <div class="tm-role">مطور واجهات</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tm-card">
+                    <div class="tm-img-wrap">
+                        <img src="team/member-3.jpg" class="tm-img" alt="عضو"
+                            onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                        <div class="tm-placeholder"><span>👤</span></div>
+                        <div class="tm-overlay">
+                            <div class="tm-name">اسم العضو</div>
+                            <div class="tm-role">مطور خلفيات</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tm-card">
+                    <div class="tm-img-wrap">
+                        <img src="team/member-4.jpg" class="tm-img" alt="عضو"
+                            onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                        <div class="tm-placeholder"><span>👤</span></div>
+                        <div class="tm-overlay">
+                            <div class="tm-name">اسم العضو</div>
+                            <div class="tm-role">منتج فيديو AI</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tm-card">
+                    <div class="tm-img-wrap">
+                        <img src="team/member-5.jpg" class="tm-img" alt="عضو"
+                            onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                        <div class="tm-placeholder"><span>👤</span></div>
+                        <div class="tm-overlay">
+                            <div class="tm-name">اسم العضو</div>
+                            <div class="tm-role">مصمم UX/UI</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tm-card">
+                    <div class="tm-img-wrap">
+                        <img src="team/member-6.jpg" class="tm-img" alt="عضو"
+                            onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                        <div class="tm-placeholder"><span>👤</span></div>
+                        <div class="tm-overlay">
+                            <div class="tm-name">اسم العضو</div>
+                            <div class="tm-role">كاتب محتوى</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tm-card">
+                    <div class="tm-img-wrap">
+                        <img src="team/member-7.jpg" class="tm-img" alt="عضو"
+                            onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                        <div class="tm-placeholder"><span>👤</span></div>
+                        <div class="tm-overlay">
+                            <div class="tm-name">اسم العضو</div>
+                            <div class="tm-role">مدير تسويق</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tm-card">
+                    <div class="tm-img-wrap">
+                        <img src="team/member-8.jpg" class="tm-img" alt="عضو"
+                            onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                        <div class="tm-placeholder"><span>👤</span></div>
+                        <div class="tm-overlay">
+                            <div class="tm-name">اسم العضو</div>
+                            <div class="tm-role">مختص SEO</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tm-card">
+                    <div class="tm-img-wrap">
+                        <img src="team/member-9.jpg" class="tm-img" alt="عضو"
+                            onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                        <div class="tm-placeholder"><span>👤</span></div>
+                        <div class="tm-overlay">
+                            <div class="tm-name">اسم العضو</div>
+                            <div class="tm-role">مدير مشاريع</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tm-card">
+                    <div class="tm-img-wrap">
+                        <img src="team/member-10.jpg" class="tm-img" alt="عضو"
+                            onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                        <div class="tm-placeholder"><span>👤</span></div>
+                        <div class="tm-overlay">
+                            <div class="tm-name">اسم العضو</div>
+                            <div class="tm-role">مطور تطبيقات</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tm-card">
+                    <div class="tm-img-wrap">
+                        <img src="team/member-11.jpg" class="tm-img" alt="عضو"
+                            onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                        <div class="tm-placeholder"><span>👤</span></div>
+                        <div class="tm-overlay">
+                            <div class="tm-name">اسم العضو</div>
+                            <div class="tm-role">مصمم موشن</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tm-card">
+                    <div class="tm-img-wrap">
+                        <img src="team/member-12.jpg" class="tm-img" alt="عضو"
+                            onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                        <div class="tm-placeholder"><span>👤</span></div>
+                        <div class="tm-overlay">
+                            <div class="tm-name">اسم العضو</div>
+                            <div class="tm-role">مختص إعلانات</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tm-card">
+                    <div class="tm-img-wrap">
+                        <img src="team/member-13.jpg" class="tm-img" alt="عضو"
+                            onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                        <div class="tm-placeholder"><span>👤</span></div>
+                        <div class="tm-overlay">
+                            <div class="tm-name">اسم العضو</div>
+                            <div class="tm-role">مختص تعليم إلكتروني</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tm-card">
+                    <div class="tm-img-wrap">
+                        <img src="team/member-14.jpg" class="tm-img" alt="عضو"
+                            onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                        <div class="tm-placeholder"><span>👤</span></div>
+                        <div class="tm-overlay">
+                            <div class="tm-name">اسم العضو</div>
+                            <div class="tm-role">مصور ومونتير</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tm-card">
+                    <div class="tm-img-wrap">
+                        <img src="team/member-15.jpg" class="tm-img" alt="عضو"
+                            onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                        <div class="tm-placeholder"><span>👤</span></div>
+                        <div class="tm-overlay">
+                            <div class="tm-name">اسم العضو</div>
+                            <div class="tm-role">مستشار استراتيجي</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="tm-nav">
+            <button class="tm-btn" id="tmPrev">&#8592;</button>
+            <div class="tm-dots" id="tmDots"></div>
+            <button class="tm-btn" id="tmNext">&#8594;</button>
+        </div>
+
+    </section>
+
+
+    <!-- ═══════════════════════════════════════════
+     WHY US
+═══════════════════════════════════════════ -->
+    <section class="why-sec" id="why">
+        <div class="container">
+            <div class="why-inner">
+
+                <!-- Stacked visual cards -->
+                <div class="wcard-col">
+                    <div class="wcard wc1 fade-right d1">
+                        <div class="wcard-ic">🚀</div>
+                        <div class="wcard-t">إطلاق سريع</div>
+                        <div class="wcard-d">نحول فكرتك إلى منتج حقيقي في أقصر وقت ممكن دون المساس بالجودة</div>
+                    </div>
+                    <div class="wcard wc2 fade-left d2">
+                        <div class="wcard-ic">🎯</div>
+                        <div class="wcard-t">نتائج قابلة للقياس</div>
+                        <div class="wcard-d">كل مشروع مرتبط بأهداف واضحة ومؤشرات نجاح حقيقية وقابلة للقياس</div>
+                    </div>
+                    <div class="wcard wc3 fade-right d3">
+                        <div class="wcard-ic">🤝</div>
+                        <div class="wcard-t">شراكة حقيقية</div>
+                        <div class="wcard-d">لسنا مجرد منفذين — نحن شركاء نجاح على المدى البعيد</div>
+                    </div>
+                </div>
+
+                <!-- Text -->
+                <div class="why-text fade-left">
+                    <div class="sec-tag fade-up">Why Tajseer</div>
+                    <h2 class="sec-title fade-up d1">لماذا تختار <span class="grad">تجسير</span>؟</h2>
+                    <p class="why-intro fade-up d2">في عالم مليء بالخيارات، تجسير تتميز بمزيج فريد من الخبرة التقنية
+                        والفهم العميق لاحتياجات السوق الخليجي.</p>
+                    <ul class="feat-list fade-up d2">
+                        <li><span class="feat-check">✓</span><span>فريق متخصص من المبدعين والمطورين بخبرة تزيد عن 5
+                                سنوات</span></li>
+                        <li><span class="feat-check">✓</span><span>نفهم السوق الخليجي ونتحدث لغته بشكل حقيقي
+                                وأصيل</span></li>
+                        <li><span class="feat-check">✓</span><span>نلتزم بالجودة والمواعيد في كل مشروع بدون
+                                استثناء</span></li>
+                        <li><span class="feat-check">✓</span><span>دعم فني متكامل ما بعد التسليم لضمان نجاح
+                                مشروعك</span></li>
+                        <li><span class="feat-check">✓</span><span>أسعار تنافسية تناسب الشركات الناشئة والمؤسسات
+                                الكبرى</span></li>
+                    </ul>
+                    <div class="fade-up d3">
+                        <a href="#cta" class="btn-p">احجز استشارتك المجانية ←</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════════
+     PROCESS
+═══════════════════════════════════════════ -->
+    <section class="process-sec" id="process">
+        <div class="container">
+            <div class="sec-head">
+                <div class="sec-tag fade-up">Our Process</div>
+                <h2 class="sec-title fade-up d1">من الفكرة إلى <span class="grad">الإطلاق</span></h2>
+                <p class="sec-sub fade-up d2">منهجية واضحة وشفافة تضمن نتيجة استثنائية في كل مرحلة</p>
+            </div>
+
+            <div class="proc-steps">
+                <div class="step-c fade-down d1">
+                    <div class="step-n">01</div>
+                    <h3 class="step-t">الاستشارة والتحليل</h3>
+                    <p class="step-d">نجلس معك لفهم رؤيتك وأهدافك وجمهورك المستهدف بعمق</p>
+                </div>
+                <div class="step-c fade-down d2">
+                    <div class="step-n">02</div>
+                    <h3 class="step-t">التصميم والتخطيط</h3>
+                    <p class="step-d">نضع خارطة طريق واضحة وتصميمات أولية تعكس هوية علامتك</p>
+                </div>
+                <div class="step-c fade-down d3">
+                    <div class="step-n">03</div>
+                    <h3 class="step-t">التطوير والتنفيذ</h3>
+                    <p class="step-d">فريقنا يحوّل التصميمات إلى منتج حقيقي بأعلى معايير الجودة</p>
+                </div>
+                <div class="step-c fade-down d4">
+                    <div class="step-n">04</div>
+                    <h3 class="step-t">الإطلاق والدعم</h3>
+                    <p class="step-d">نطلق مشروعك ونستمر بدعمك لضمان النجاح على المدى البعيد</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- ═══════════════════════════════════════════
+     TRUST / TESTIMONIALS
+═══════════════════════════════════════════ -->
+    <section class="trust-sec" id="trust">
+        <div class="container">
+            <div class="sec-head">
+                <div class="sec-tag fade-up">Client Stories</div>
+                <h2 class="sec-title fade-up d1">عملاؤنا يحكون <span class="grad">القصة الحقيقية</span></h2>
+                <p class="sec-sub fade-up d2">نجاحهم هو معيار نجاحنا الأول والأخير</p>
+            </div>
+
+            <div class="trust-grid">
+
+                <div class="trust-card fade-left d1">
+                    <div class="trust-stars">★★★★★</div>
+                    <p class="trust-txt">تجسير حولت منصتنا التعليمية من مجرد فكرة إلى واقع متكامل. الجودة والالتزام
+                        بالمواعيد كانا استثنائيين بكل معنى الكلمة.</p>
+                    <div class="trust-auth">
+                        <div class="auth-av">أ</div>
+                        <div>
+                            <div class="auth-name">أحمد الزهراني 🇸🇦</div>
+                            <div class="auth-role">مدير التطوير — شركة سعودية</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="trust-card fade-up d2">
+                    <div class="trust-stars">★★★★★</div>
+                    <p class="trust-txt">الفريق فهم احتياجاتنا من اللقاء الأول. الموقع الذي سلموه يعكس هويتنا بشكل مثالي
+                        وبتقنية عالية المستوى.</p>
+                    <div class="trust-auth">
+                        <div class="auth-av">م</div>
+                        <div>
+                            <div class="auth-name">منى الحداد 🇯🇴</div>
+                            <div class="auth-role">المديرة التنفيذية — مؤسسة أردنية</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="trust-card fade-right d3">
+                    <div class="trust-stars">★★★★★</div>
+                    <p class="trust-txt">فيديوهات AI التي أنتجوها لنا رفعت مستوى حملتنا التسويقية بشكل ملحوظ. نتائج
+                        حقيقية وملموسة على أرض الواقع.</p>
+                    <div class="trust-auth">
+                        <div class="auth-av">خ</div>
+                        <div>
+                            <div class="auth-name">خالد العتيبي 🇸🇦</div>
+                            <div class="auth-role">مدير التسويق — مجموعة خليجية</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════════
+     CTA
+═══════════════════════════════════════════ -->
+    <section class="cta-sec" id="cta">
+        <div class="container">
+            <div class="cta-box fade-scale">
+                <div class="sec-tag fade-up" style="margin: 0 auto 1.5rem;">Let's Work Together</div>
+                <h2 class="cta-title fade-up d1">مشروعك القادم يستحق <span class="grad">أفضل شريك رقمي</span></h2>
+                <p class="cta-sub fade-up d2">تواصل معنا اليوم واحصل على استشارة مجانية — نحن مستعدون لنسمع فكرتك
+                    ونحولها إلى واقع مبهر</p>
+                <div class="cta-btns fade-up d3">
+                    <a href="mailto:hello@tajseer.com" class="btn-p">📧 راسلنا الآن</a>
+                    <a href="https://wa.me/962000000000" class="btn-o" target="_blank" rel="noopener">💬 واتساب</a>
+                </div>
+                <div class="cta-badges fade-up d4">
+                    <span>✓ استشارة مجانية</span>
+                    <span>✓ بدون التزامات</span>
+                    <span>✓ رد خلال 24 ساعة</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════════
+     FOOTER
+═══════════════════════════════════════════ -->
+    <footer id="footer">
+        <div class="container">
+            <div class="foot-grid">
+
+                <!-- Brand -->
+                <div class="foot-brand">
+                    <div class="foot-logo-row">
+                        <img src="tajseer-logo.png" alt="Tajseer Logo" class="foot-logo-img" />
+                        <div>
+                            <div class="foot-en">TAJSEER</div>
+                            <div class="foot-ar">تجسير</div>
+                        </div>
+                    </div>
+                    <p class="foot-desc">نصنع جسراً بين أفكارك والواقع الرقمي — تعليم، ويب، وذكاء اصطناعي بلمسة عربية
+                        أصيلة ومعايير عالمية.</p>
+                    <p class="foot-loc">🇯🇴 عمان، الأردن · نخدم المنطقة العربية والخليج</p>
+                    <div class="foot-socials">
+                        <a href="#" class="soc-btn" aria-label="Instagram" data-social="instagram">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="2" width="20" height="20" rx="5" />
+                                <circle cx="12" cy="12" r="4" />
+                                <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
+                            </svg>
+                        </a>
+                        <a href="#" class="soc-btn" aria-label="LinkedIn" data-social="linkedin">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                                <rect x="2" y="9" width="4" height="12" />
+                                <circle cx="4" cy="4" r="2" />
+                            </svg>
+                        </a>
+                        <a href="#" class="soc-btn" aria-label="Facebook" data-social="facebook">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Services -->
+                <div class="foot-col">
+                    <h4>الخدمات</h4>
+                    <ul>
+                        <li><a href="#services">التعليم الإلكتروني</a></li>
+                        <li><a href="#services">تصميم المواقع</a></li>
+                        <li><a href="#services">فيديوهات AI</a></li>
+                        <li><a href="#services">الهوية البصرية</a></li>
+                        <li><a href="#services">المحتوى الرقمي</a></li>
+                    </ul>
+                </div>
+
+                <!-- Company -->
+                <div class="foot-col">
+                    <h4>الشركة</h4>
+                    <ul>
+                        <li><a href="#">من نحن</a></li>
+                        <li><a href="#">أعمالنا</a></li>
+                        <li><a href="#">مدونتنا</a></li>
+                        <li><a href="#">الشراكات</a></li>
+                        <li><a href="#">انضم للفريق</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div class="foot-col">
+                    <h4>تواصل معنا</h4>
+                    <ul>
+                        <li><a href="mailto:hello@tajseer.com">hello@tajseer.com</a></li>
+                        <li><a href="https://wa.me/962000000000">واتساب</a></li>
+                        <li><a href="#">عمان، الأردن 🇯🇴</a></li>
+                        <li><a href="#">الرياض، السعودية 🇸🇦</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="foot-bottom">
+                <div>© 2025 تجسير · جميع الحقوق محفوظة</div>
+                <div class="foot-links">
+                    <a href="#">سياسة الخصوصية</a>
+                    <a href="#">الشروط والأحكام</a>
+                </div>
+                <div>Designed with ❤️ by <span class="teal">Tajseer</span></div>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
